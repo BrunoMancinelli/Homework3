@@ -11,6 +11,22 @@ After completing this operation, build the packages by doing:
 Then, use the source command:
 
     $ source install/setup.bash
+    
+To test the point 1, first of all you have to change the world in the launch file. To do this go into ros2_iiwa/iiwa_bringup/launch and change "empty.world" with "spherical.world" at line 326 in the iiwa.launch.py.
+
+Then you can write in a terminal:
+
+     $ ros2 launch iiwa_bringup iiwa.launch.py use_vision:=true
+
+In another terminal write:
+
+     $ros2 run ros2_opencv ros2_opencv_node
+
+To check the image seen by the camera you can write:
+
+     $ ros2 run rqt_image_view rqt_image_view
+
+Select the topic /videocamera to see the real image or /videocamera_processata if you prefer to see the detected image.    
 
 If you want to spawn the robot by using the velocity controller (as requested in the point 2.a), write the following command in a terminal:
 
