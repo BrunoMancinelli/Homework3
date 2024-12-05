@@ -4,7 +4,7 @@ RUN echo "export GZ_SIM_RESOURCE_PATH=~/ros2_ws/src/ros2_iiwa/iiwa_description/g
 
 Please, once you have cloned the repository, open the Homework3 folder, copy the files into the directory associated with the Docker container and delete the old one.
 
-After completing, build the packages by doing:
+After completing this operation, build the packages by doing:
 
      $ colcon build
 
