@@ -28,7 +28,7 @@ To check the image seen by the camera you can write:
 
 Select the topic /videocamera to see the real image or /videocamera_processata if you prefer to see the detected image.    
 
-If you want to spawn the robot by using the velocity controller (as requested in the point 2.a), write the following command in a terminal:
+Instead if you want to spawn the robot by using the velocity controller (as requested in the point 2.a), write the following command in a terminal:
 
     $ ros2 launch iiwa_bringup iiwa.launch.py command_interface:="velocity" robot_controller:="velocity_controller" use_vision:=true
 
